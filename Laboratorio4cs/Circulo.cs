@@ -11,27 +11,27 @@ namespace Laboratorio4cs
             coordY = y;
             raio = r;
         }
-        public Circulo() : this(0,0,1)
+        public Circulo() : this(0, 0, 1)
         {
         }
         public double CentroX
         {
-            get {return coordX;}
-            set {coordX = value;}
+            get { return coordX; }
+            set { coordX = value; }
         }
         public double CentroY
         {
-            get {return coordY;}
-            set {coordY = value;}
+            get { return coordY; }
+            set { coordY = value; }
         }
         public double Raio
         {
-            get {return raio;}
-            set {raio = value;}
+            get { return raio; }
+            set { raio = value; }
         }
         public override string ToString()
         {
-            return base.ToString() + $" ({CentroX:F2};{CentroY:F2}) raio={Raio:F2}";
+            return "(" + string.Format("{0:F2}", CentroX) + ";" + string.Format("{0:F2}", CentroY) + ")" + " raio=" + string.Format("{0:F2}", Raio);
         }
     }
 }
